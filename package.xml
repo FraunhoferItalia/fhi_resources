@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<package format="2">
+  <name>fhi_resources</name>
+  <version>0.0.0</version>
+  <description>The fhi_resources package</description>
+  <maintainer email="marco.magri@fraunhofer.it">Marco Magri</maintainer>
+  <license>Copyright (C) 2023 Fraunhofer Italia Research S.c.a.r.l.</license>
+
+  <buildtool_depend>catkin</buildtool_depend>
+
+  <export>
+  </export>
+</package>
