@@ -7,7 +7,7 @@
     "affiliation": "Fraunhofer Italia",
     "email": "marco.magri@fraunhofer.it",
     "cost": 0,
-    "type": "interface_adapter",
+    "type": "end_effector",
     "family": "FHI",
     "label": "Tip",
     "disabled": false
