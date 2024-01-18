@@ -1,0 +1,204 @@
+{
+    "header": {
+      "ID": "4020",
+      "name": "driller.json",
+      "date": "2023-11-20",
+      "author": "MarcoMagri",
+      "affiliation": "Fraunhofer Italia",
+      "email": "marco.magri@fraunhofer.it",
+      "cost": 0,
+      "type": "end_effector",
+      "family": "FHI",
+      "label": "Driller",
+      "addons": ["camera"],
+      "disabled": false
+    },
+    "bodies": [
+      {
+        "ID": "402_link",
+        "mass": 0.2,
+        "inertia": [
+          [
+            0.000144,
+            0.0,
+            0.0
+          ],
+          [          
+            0.0,
+            0.000144,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0002
+          ]
+        ],
+        "r_com": [
+          0.0,
+          0.0,
+          0.01831
+        ],
+        "visual": [
+          {
+            "type": "mesh",
+            "parameters": {
+              "file": "package://fhi_resources/models/modular/meshes/driller.stl",
+              "scale": [
+                1.0,
+                1.0,
+                1.0
+              ],
+              "color": {
+                "material_name": "grey"
+              }
+            },
+            "pose": [
+              [
+                0,
+                0,
+                0,
+                0.0
+              ],
+              [
+                0,
+                1,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                1,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                1
+              ]
+            ]
+          }
+        ],
+        "collision": [
+          {
+            "type": "mesh",
+            "parameters": {
+              "file": "package://fhi_resources/models/modular/meshes/driller.stl",
+              "scale": [
+                1.0,
+                1.0,
+                1.0
+              ]
+            },
+            "pose": [
+              [
+                1,
+                0,
+                0,
+                0.0
+              ],
+              [
+                0,
+                1,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                1,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                1
+              ]
+            ]
+          }
+        ],
+        "connectors": [
+          {
+            "ID": "402_connector_1",
+            "pose": [
+              [
+                1,
+                0,
+                0,
+                0.0
+              ],
+              [
+                0,
+                1,
+                0,
+                0.0
+              ],
+              [
+                0,
+                0,
+                1,
+                0.0
+              ],
+              [
+                0,
+                0,
+                0,
+                1
+              ]
+            ],
+            "gender": "f",
+            "type": "eef",
+            "size": "large"
+          },
+          {
+            "ID": "402_connector_2",
+            "pose": [
+              [
+                0,
+                0,
+                1,
+                0.25
+              ],
+              [
+                0,
+                1,
+                0,
+                0.0
+              ],
+              [
+                -1,
+                0,
+                0,
+                0.135
+              ],
+              [
+                0,
+                0,
+                0,
+                1
+              ]
+            ],
+            "gender": "e",
+            "type": "eef",
+            "size": "large"
+          }
+        ],
+        "gazebo": [
+          {
+            "mu1": 0.2,
+            "mu2": 0.2,
+            "kp": 100000000.0,
+            "kd": 1.0,
+            "maxVel": 0.0,
+            "minDepth": 0.0001,
+            "material": "Gazebo/Grey",
+            "selfCollide": true
+          }
+        ]
+      }
+    ],
+    "joints": []
+  }

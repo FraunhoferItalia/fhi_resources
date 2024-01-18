@@ -1,0 +1,19 @@
+{
+    "header": {
+        "ID": "4020",
+        "name": "driller.json",
+        "date": "2023-11-20",
+        "author": "MarcoMagri",
+        "affiliation": "Fraunhofer Italia",
+        "email": "marco.magri@fraunhofer.it",
+        "cost": 0,
+        "type": "camera",
+        "family": "FHI",
+        "label": "Driller Camera",
+        "disabled": false
+    },
+    "parameters": {
+        "xyz_offset": [-0.1, 0.0, -0.05],
+        "rpy_offset": [0.0, -1.57, 0.0]
+    }
+}
