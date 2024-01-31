@@ -1,0 +1,221 @@
+{
+  "header": {
+    "ID": "4030",
+    "name": "robotiq2f85.json",
+    "date": "2023-11-20",
+    "author": "MarcoMagri",
+    "affiliation": "Fraunhofer Italia",
+    "email": "marco.magri@fraunhofer.it",
+    "cost": 0,
+    "type": "end_effector",
+    "family": "FHI",
+    "label": "Robotiq2f85",
+    "disabled": false,
+    "offsets": {
+      "yaw": [
+        {
+          "label": "-π/2",
+          "value": -1.5707963267948966
+        },
+        0,
+        {
+          "label": "π/2",
+          "value": 1.5707963267948966
+        },
+        {
+          "label": "π",
+          "value": 3.141592653589793
+        }
+      ]
+    },
+    "reversible": false
+  },
+  "bodies": [
+    {
+      "ID": "403_link",
+      "mass": 0.925,
+      "inertia": [
+        [
+          0.004180,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.005080,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.00125
+        ]
+      ],
+      "r_com": [
+        0.0,
+        0.0,
+        0.01831
+      ],
+      "visual": [
+        {
+          "type": "mesh",
+          "parameters": {
+            "file": "package://fhi_resources/models/modular/meshes/robotiq_2f85.stl",
+            "scale": [
+              0.001,
+              0.001,
+              0.001
+            ],
+            "color": {
+              "material_name": "grey"
+            }
+          },
+          "pose": [
+            [
+              0,
+              0,
+              0,
+              0.0
+            ],
+            [
+              0,
+              1,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              1,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              1
+            ]
+          ]
+        }
+      ],
+      "collision": [
+        {
+          "type": "mesh",
+          "parameters": {
+            "file": "package://fhi_resources/models/modular/meshes/robotiq_2f85.stl",
+            "scale": [
+              0.001,
+              0.001,
+              0.001
+            ]
+          },
+          "pose": [
+            [
+              1,
+              0,
+              0,
+              0.0
+            ],
+            [
+              0,
+              1,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              1,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              1
+            ]
+          ]
+        }
+      ],
+      "connectors": [
+        {
+          "ID": "403_connector_1",
+          "pose": [
+            [
+              1,
+              0,
+              0,
+              0.0
+            ],
+            [
+              0,
+              1,
+              0,
+              0.0
+            ],
+            [
+              0,
+              0,
+              1,
+              0.0
+            ],
+            [
+              0,
+              0,
+              0,
+              1
+            ]
+          ],
+          "gender": "f",
+          "type": "eef",
+          "size": "large"
+        },
+        {
+          "ID": "403_connector_2",
+          "pose": [
+            [
+              1,
+              0,
+              0,
+              0.0
+            ],
+            [
+              0,
+              1,
+              0,
+              0.0
+            ],
+            [
+              0,
+              0,
+              1,
+              0.1493
+            ],
+            [
+              0,
+              0,
+              0,
+              1
+            ]
+          ],
+          "gender": "e",
+          "type": "eef",
+          "size": "large"
+        }
+      ],
+      "gazebo": [
+        {
+          "mu1": 0.2,
+          "mu2": 0.2,
+          "kp": 100000000.0,
+          "kd": 1.0,
+          "maxVel": 0.0,
+          "minDepth": 0.0001,
+          "material": "Gazebo/Grey",
+          "selfCollide": true
+        }
+      ]
+    }
+  ],
+  "joints": []
+}
