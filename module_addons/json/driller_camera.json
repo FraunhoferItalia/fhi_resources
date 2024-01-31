@@ -13,7 +13,7 @@
         "disabled": false
     },
     "parameters": {
-        "xyz_offset": [-0.1, 0.0, -0.05],
-        "rpy_offset": [0.0, -1.57, 0.0]
+        "xyz_offset": [0.1, 0.0, 0.2],
+        "rpy_offset": [0.0, 0.0, 0.0]
     }
 }
