@@ -11,12 +11,30 @@
       "family": "FHI",
       "label": "Driller",
       "addons": ["camera"],
-      "disabled": false
+      "disabled": false,
+      "offsets": {
+        "yaw": [
+          {
+            "label": "-π/2",
+            "value": -1.5707963267948966
+          },
+          0,
+          {
+            "label": "π/2",
+            "value": 1.5707963267948966
+          },
+          {
+            "label": "π",
+            "value": 3.141592653589793
+          }
+        ]
+      },
+      "reversible": false
     },
     "bodies": [
       {
         "ID": "402_link",
-        "mass": 2.590,
+        "mass": 2.450,
         "inertia": [
           [
             0.002841593,
@@ -35,9 +53,9 @@
           ]
         ],
         "r_com": [
-          0.011,
-          0.009,
-          0.042
+          -0.01,
+          0.01,
+          0.055
         ],
         "visual": [
           {
@@ -85,7 +103,7 @@
           {
             "type": "mesh",
             "parameters": {
-              "file": "package://fhi_resources/models/modular/meshes/driller.stl",
+              "file": "package://fhi_resources/models/modular/meshes/simple/driller.stl",
               "scale": [
                 0.001,
                 0.001,
@@ -172,7 +190,7 @@
                 0.96507033,
                 0.26148874,
                 0.01621392,
-                0.4808
+                0.04808
               ],
               [
                 0,
