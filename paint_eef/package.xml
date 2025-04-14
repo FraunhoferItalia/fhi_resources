@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<package>
+  <name>concert_tool_descriptions</name>
+  <version>0.0.1</version>
+  <description>Description of concert tools</description>
+
+  <maintainer email="michael.terzer@fraunhofer.it">Michael Terzer</maintainer>
+  <license>TODO</license>
+  <author email="michael.terzer@fraunhofer.it">Michael Terzer</author>
+
+  <buildtool_depend>catkin</buildtool_depend>
+  <run_depend>joint_state_publisher_gui</run_depend>
+  <run_depend>robot_state_publisher</run_depend>
+  <run_depend>joint_state_publisher</run_depend>
+  <run_depend>neo_mpo_700_description</run_depend>
+  <run_depend>urdf</run_depend>
+  <run_depend>xacro</run_depend>
+  <run_depend>joint_state_controller</run_depend>
+  <run_depend>effort_controllers</run_depend>
+  <run_depend>position_controllers</run_depend>
+
+  <export>
+  </export>
+</package>

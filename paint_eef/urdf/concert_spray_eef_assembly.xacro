@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='utf-8'?>
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro" name="concert_spray_eef">
+  <xacro:macro name="concert_spray_eef" params="name parent *origin">
+
+    <!-- Spray paint gun -->
+    <xacro:include filename="$(find concert_tool_descriptions)/urdf/spray_paint_gun.xacro"/>
+
+    <!-- Realsense camera -->
+    <xacro:include filename="$(find balto_cobot_description)/robots/realsense/d435.urdf.xacro" />
+
+    <xacro:spray_paint_gun name="spray_paint_gun" parent="${parent}">
+      <origin xyz="0 0 0." rpy="0 0 0" />
+    </xacro:spray_paint_gun>
+
+    <xacro:d435 parent="end_effector_link">
+      <origin xyz="${0.134+0.1} -0.005 0.1" rpy="0 0 -${pi/2}" />
+    </xacro:d435>
+  </xacro:macro>
+</robot>

@@ -22,7 +22,7 @@
           0.0,
           0.0
         ],
-        [          
+        [
           0.0,
           0.00013972,
           0.0
@@ -48,9 +48,7 @@
               0.001,
               0.001
             ],
-            "color": {
-              "material_name": "grey"
-            }
+            "color": "grey"
           },
           "pose": [
             [
@@ -180,7 +178,7 @@
               1
             ]
           ],
-          "gender": "e",
+          "gender": "m",
           "type": "eef",
           "size": "large"
         }
